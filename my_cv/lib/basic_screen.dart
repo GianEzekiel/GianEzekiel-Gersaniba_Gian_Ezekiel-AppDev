@@ -9,16 +9,8 @@ class BasicScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: const Center(
-            child: Text('Welcome to Flutter',
-                style: TextStyle(color: Colors.white))),
+        title: const Text('My CV', style: TextStyle(color: Colors.white)),
         iconTheme: const IconThemeData(color: Colors.white),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.all(10.0),
-            child: Icon(Icons.edit),
-          ),
-        ],
       ),
       body: const Center(
         child: SizedBox(

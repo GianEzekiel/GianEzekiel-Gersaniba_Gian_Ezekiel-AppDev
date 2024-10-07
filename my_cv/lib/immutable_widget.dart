@@ -12,16 +12,18 @@ class ImmutableWidget extends StatelessWidget {
     return Scaffold(
       body: Container(
         height: screenHeight, // Set height to full screen height
-        width: screenWidth,   // Set width to full screen width
-        color: const Color.fromARGB(255, 247, 246, 246),  // Background color for visibility
+        width: screenWidth, // Set width to full screen width
+        color: const Color.fromARGB(
+            255, 247, 246, 246), // Background color for visibility
         child: Align(
           alignment: Alignment.topCenter,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start, // Align content to the top
+            mainAxisAlignment:
+                MainAxisAlignment.start, // Align content to the top
             children: [
               Container(
-                height: 150, // Define height for the widget
-                width: 150,
+                height: 130, // Define height for the widget
+                width: 130,
                 padding: const EdgeInsets.all(16.0),
                 decoration: BoxDecoration(
                   color: Colors.blueAccent,
@@ -50,12 +52,15 @@ class ImmutableWidget extends StatelessWidget {
                 textAlign: TextAlign.center, // Center the email
                 style: TextStyle(fontSize: 18),
               ),
-              Container(
-                height: 150, // Define height for the widget
-                width: screenWidth,
-                color: Colors.white, 
-                child: const Center(
-                  child: Text(
+              Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: Container(
+                  height: 150, // Define height for the widget
+                  width: 350,
+                  color: Colors.white,
+                  alignment: Alignment.topLeft,
+                  padding: const EdgeInsets.only(left: 8.0, top: 10.0),
+                  child: const Text(
                     'Professional Goal',
                     textAlign: TextAlign.left,
                     style: TextStyle(fontSize: 18),

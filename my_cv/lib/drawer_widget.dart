@@ -15,19 +15,19 @@ class DrawerScreen extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: const [
           ListTile(
-            leading: Icon(Icons.home),
+            leading: Icon(Icons.school),
             title: Text('Education'),
           ),
           ListTile(
-            leading: Icon(Icons.business),
+            leading: Icon(Icons.lightbulb_outlined),
             title: Text('Skills'),
           ),
           ListTile(
-            leading: Icon(Icons.school),
+            leading: Icon(Icons.note_alt_outlined),
             title: Text('Projects'),
           ),
           ListTile(
-            leading: Icon(Icons.settings),
+            leading: Icon(Icons.engineering_outlined),
             title: Text('Experience'),
           ),
         ],
